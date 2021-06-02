@@ -1,0 +1,59 @@
+ul {
+  list-style: none;
+  padding: 0px 5px;
+}
+
+.player{
+  height: 250px;
+  width: 500px;
+  color: white;
+}
+
+.song-info{
+  height: 50%;
+  width: 100%;
+  background: #DCDCDC;
+  display: inline-block;
+  border: solid;
+  border-color: black;
+}
+
+.songs{
+  height: 50%;
+  width: 100%;
+  background: #5a5a5a;
+  display: inline-block;
+  border: solid;
+  border-color: black;
+  overflow: scroll;
+}
+
+.song-prop {
+ display: block;
+  margin-bottom: 3px;
+}
+
+.info-container{
+  background: #606c70;
+  width: 100%;
+  height: 70%;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  
+}
+
+.btn-container {
+  background: 	#454b4d;
+  text-align: center;
+  height: 30%;
+  line-height: 36px;
+}
+
+.btn {
+  background: black;
+  padding: 5px 10px;
+  margin: 5px;
+  color: white;
+  cursor:pointer;
+}
+
