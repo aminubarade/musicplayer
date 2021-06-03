@@ -42,12 +42,12 @@ let songs = [
   }
 ];
 
-//list
+//list all songs
 function listSongs() {
   let songList = document.getElementById('songs');
   for(let i=0;i<songs.length;i++){
       songList.innerHTML += 
-        '<li class="test'+[i]+'">'+songs[i].title+'</li>';
+        '<li class="song test'+[i]+'">'+songs[i].title+'</li>';
   }
 }
 listSongs();
@@ -55,6 +55,16 @@ listSongs();
 
 //default
 songs[0].play();
+//playPause
+function playPause () {
+  let ppBtn = document.getElementById('ppBtn');
+  if(ppBtn.innerHTML === 'play'){
+    ppBtn.innerHTML = 'pause';
+  }
+  else {
+    ppBtn.innerHTML = 'play';
+  }
+}
 
 //next
 let j = 0;
@@ -67,6 +77,7 @@ document.getElementById("info").innerHTML =
     '<span class="song-prop">Year: '+songs[j].year+'</span>'
   j++;
 }
+
 //previous
 function prev() {
   if (j <= 0) j = songs.length;
@@ -77,16 +88,7 @@ document.getElementById("info").innerHTML =
     '<span class="song-prop">Year: '+songs[j-2].year+'</span>'
   j--;
 }
-//playPause
-function playPause () {
-  let ppBtn = document.getElementById('ppBtn');
-  if(ppBtn.innerHTML === 'play'){
-    ppBtn.innerHTML = 'pause';
-  }
-  else {
-    ppBtn.innerHTML = 'play';
-  }
-}
+
 
 
 
